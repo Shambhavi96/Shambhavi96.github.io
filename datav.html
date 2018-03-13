@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link rel="stylesheet" href="css/responsive.css">
     <link href="https://getbootstrap.com/examples/justified-nav/justified-nav.css" rel="stylesheet">
 <script src="https://d3js.org/d3.v3.min.js"></script>
  <link rel="stylesheet" href="style.css">
@@ -48,12 +49,14 @@
 .container {
     padding: 40px 16px;
 }
-.
+
 </style>
 </head>
 <body style="background-color:#75cbe7; color: #515656; ">
 <div class="container">
+
 <div class="card" id="here">
+
 <h4 style="padding: 30px 15px;"><center> Data Visualisation of the total footfalls at the CSMVS Museum, Mumbai, 2018</center></h4>
 
 <script>
@@ -113,6 +116,8 @@ svg.append("g")
 d3.csv("anim.csv", type, function(error, data) {
   replay(data);
 });
+
+
 
 function type(d) {
   // + coerces to a Number from a String (or anything)

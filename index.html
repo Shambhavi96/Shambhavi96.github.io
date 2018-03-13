@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="author" content="John Doe">
+    
     <meta name="description" content="">
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
+    
     <title>Home</title>
-    <!-- Place favicon.ico in the root directory -->
+    
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
     <!-- Plugin-CSS -->
@@ -26,7 +26,29 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+    
     <style>
+    .containersign {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signature {
+  position: relative;
+  overflow: auto;
+  width: 100%;
+  height: 0;
+  padding-bottom: 55.30973%;
+}
+.signature svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
     .modal {
     display: none; 
     position: fixed; 
@@ -228,7 +250,7 @@ align-content: left;
     text-decoration: none;
     cursor: pointer;
 }
-/* 100% Image Width on Smaller Screens */
+
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
@@ -299,12 +321,28 @@ align-content: left;
   }
 }
 
+
+#slide-up {
+  animation: 1s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+
 </style>
 
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
     <script>
       
      $(function() {
@@ -314,6 +352,12 @@ align-content: left;
     });
   });
   </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/indexsign.js"></script>
 
 </head>
 
@@ -348,11 +392,7 @@ align-content: left;
                     <li><a href="#service-page">Exlpore</a></li>
                     <li><a href="#team-page">About us</a></li>
                     <li><a href="#faq-page">FAQ</a></li>
-                    <!--li><a href="#price-page">Pricing</a></li>
-                    <li><a href="#team-page">Team</a></li>
                     
-                    <li><a href="#blog-page">Blog</a></li>
-                    <li><a href="#contact-page">Contact</a></li-->
                 </ul>
             </nav>
         </div>
@@ -365,77 +405,70 @@ align-content: left;
         
         <a href="#service-page" class="scroll-down" address="true"></a>
         <div class="absolute anlge-bg"></div>
-        <div class="container" id="home">
+        <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
-                
-                    <h2>IRIS</h2>
-                    <p>We are offering full suite of solutions to tackle multifaceted problems. Our first module is for tracking and understanding the demographics of visitors to the museum. The second module is a knowledge platform. The Iris platform is a forum for conservationists to interact within the community along with the Q&A module that can act as a companion app during museum visits. </p>
+                <div class="containersign">
+        <div class="signature">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><path fill="#000"/>
+    <path fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" d="M382.768,704.324c2.52,4.203,6.3,6.3,11.34,6.3c7.974,0,16.164-8.396,24.57-25.2c8.396-16.793,15.435-40.418,21.105-70.875
+        c5.67-30.446,8.505-64.988,8.505-103.635c0-41.58-6.202-73.917-18.585-97.02c-12.394-23.093-30.142-34.65-53.235-34.65
+        c-23.94,0-46.522,9.45-67.725,28.35c-21.213,18.9-38.115,42.21-50.715,69.93c-12.6,27.72-18.9,53.974-18.9,78.75
+        c0,21.42,4.824,38.223,14.49,50.399c-15.12,0-27.829-4.725-38.115-14.175c-10.296-9.45-15.435-21.735-15.435-36.854
+        c0-28.134,9.135-57.96,27.405-89.46s42.309-57.852,72.135-79.065c29.817-21.204,61.11-31.815,93.87-31.815
+        c39.06,0,69.3,15.651,90.72,46.935c21.42,31.293,32.13,75.285,32.13,131.985c0,30.664-5.67,61.425-17.01,92.295
+        c-11.34,30.869-26.145,56.178-44.415,75.915c-18.27,19.746-37.071,29.609-56.385,29.609c-12.6,0-22.473-4.508-29.61-13.545
+        c-7.146-9.026-10.71-21.941-10.71-38.745c0-12.177,2.52-25.722,7.56-40.635c5.04-14.903,12.068-27.72,21.105-38.43
+        c9.026-10.71,19.215-16.065,30.555-16.065c5.04,0,9.45,0.847,13.23,2.521c-15.12,10.503-27.513,25.102-37.17,43.784
+        c-9.667,18.693-14.49,37.702-14.49,57.016C378.988,694.667,380.248,700.131,382.768,704.324z"/>
+    <path fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" d="M770.841,538.004c2.934,0,5.247,1.369,6.93,4.095c1.673,2.737,2.097,5.985,1.26,9.766
+        c-5.04,17.64-14.707,36.854-28.98,57.645c-14.283,20.79-30.141,38.332-47.565,52.605c-17.433,14.283-33.075,21.42-46.935,21.42
+        l-5.04-0.63c-15.543-2.521-25.938-9.972-31.185-22.365c-5.257-12.384-7.875-28.241-7.875-47.565l0.63-31.5
+        c0-7.56-0.63-13.229-1.89-17.01c-1.683-4.616-4.725-8.604-9.135-11.97c-4.41-3.356-10.612-7.56-18.585-12.6
+        c-12.6-7.137-22.257-14.273-28.98-21.42c-6.714-7.137-10.08-16.587-10.08-28.35c0-8.82,2.628-16.164,7.875-22.05
+        c5.256-5.877,11.655-8.82,19.215-8.82c9.657,0,17.108,3.367,22.365,10.08c5.247,6.724,7.875,15.543,7.875,26.46
+        c0,2.943-0.423,7.354-1.26,13.23c4.193,0.847,10.494,1.684,18.9,2.52c15.12,1.684,27.188,3.573,36.225,5.67
+        c9.027,2.107,16.695,5.985,22.995,11.655c6.3,5.67,9.45,13.762,9.45,24.255c0,7.983-1.89,17.227-5.67,27.72
+        c-3.78,10.504-9.037,22.474-15.75,35.91c-3.78,7.561-7.038,14.707-9.765,21.42c-2.737,6.724-4.095,11.764-4.095,15.12
+        c0,2.521,0.521,4.203,1.575,5.04c1.043,0.847,2.835,1.26,5.355,1.26c8.396,0,19.421-5.876,33.075-17.64
+        c13.644-11.754,26.874-26.243,39.69-43.47c12.807-17.217,21.942-33.391,27.405-48.511
+        C761.805,542.001,765.801,538.004,770.841,538.004z M579.952,503.984c0.836-6.713,1.26-10.917,1.26-12.6
+        c0-10.08-3.367-15.12-10.08-15.12c-2.52,0-4.302,0.847-5.355,2.52c-1.043,1.683-1.575,3.573-1.575,5.67
+        C564.202,493.274,569.458,499.791,579.952,503.984z"/>
+    <path fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" d="M880.77,633.134c-19.53,23.94-41.482,35.91-65.835,35.91c-19.747,0-35.812-9.233-48.195-27.72
+        c-12.383-18.477-18.585-41.787-18.585-69.93c0-16.381,2.106-32.76,6.3-49.141c2.52-10.493,9.45-18.683,20.79-24.57
+        c11.34-5.876,23.31-8.82,35.91-8.82c14.273,0,21.42,5.04,21.42,15.12c0,2.52-0.216,4.41-0.63,5.67
+        c-3.367,15.966-6.3,33.183-8.82,51.66c-2.52,18.486-3.78,34.443-3.78,47.88c0,23.526,3.78,35.279,11.34,35.279
+        c14.273,0,28.133-10.395,41.58-31.185c13.437-20.79,24.984-47.565,34.65-80.325c0.836-3.356,2.303-5.985,4.41-7.875
+        c2.097-1.89,4.194-2.835,6.3-2.835c2.933,0,5.138,1.162,6.615,3.465c1.467,2.313,1.782,5.355,0.945,9.135
+        C915.104,576.435,900.299,609.194,880.77,633.134z M776.504,389.009c7.974-8.19,17.847-14.805,29.61-19.845
+        c11.753-5.04,22.887-7.56,33.39-7.56c9.657,0,17.532,2.313,23.625,6.93c6.083,4.626,9.135,11.557,9.135,20.79
+        c0,15.543-7.038,28.458-21.105,38.745c-14.076,10.296-29.511,15.435-46.305,15.435c-11.763,0-21.42-2.303-28.98-6.93
+        c-7.56-4.617-11.34-11.753-11.34-21.42C764.534,405.921,768.521,397.199,776.504,389.009z"/>
+    <path fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" d="M1113.866,523.199c2.304-1.89,4.725-2.835,7.245-2.835c2.52,0,4.41,1.053,5.67,3.15c1.26,2.106,1.467,5.04,0.63,8.82
+        c-3.366,14.283-12.078,26.884-26.145,37.8c-14.077,10.927-33.922,23.104-59.535,36.54c12.177,15.544,18.27,30.663,18.27,45.36
+        c0,22.68-7.875,40.95-23.625,54.81c-15.75,13.86-36.854,20.79-63.314,20.79c-11.341,0-20.791-3.465-28.351-10.395
+        c-7.56-6.93-11.34-16.065-11.34-27.405c0-21.833,13.014-42.417,39.06-61.74c-8.406-12.177-21.006-27.296-37.799-45.359
+        c-20.16-22.257-35.487-41.266-45.99-57.015c-10.494-15.75-15.75-31.185-15.75-46.305c0-9.233,3.15-16.479,9.45-21.735
+        c6.3-5.247,14.076-7.875,23.31-7.875c10.08,0,18.477,3.15,25.2,9.45c6.713,6.3,10.08,15.543,10.08,27.72
+        c0,8.82-2.313,19.747-6.93,32.76c6.3,5.04,17.424,13.023,33.391,23.94c29.816,21.007,50.606,37.387,62.369,49.141
+        c25.2-13.86,43.992-24.983,56.386-33.391c12.383-8.396,20.052-17.847,22.995-28.35
+        C1109.978,527.717,1111.553,525.089,1113.866,523.199z M903.131,479.414c0,7.56,4.41,15.75,13.23,24.57
+        c2.097-9.657,3.15-17.01,3.15-22.05c0-8.396-2.313-12.6-6.93-12.6C906.281,469.334,903.131,472.701,903.131,479.414z
+         M981.881,643.214c-18.486,15.544-27.72,31.717-27.72,48.51c0,5.464,1.89,9.982,5.67,13.546c3.78,3.573,8.19,5.354,13.23,5.354
+        c5.453,0,10.286-2.618,14.489-7.875c4.193-5.247,6.301-12.698,6.301-22.365C993.852,669.044,989.854,656.661,981.881,643.214z"/>
+</svg>
+</div>
+</div>
+
+        <p style="text-align: justify;" id="slide-up">We are offering full suite of solutions to tackle multifaceted problems. Our first module is for tracking and understanding the demographics of visitors to the museum. The second module is a knowledge platform. The Iris platform is a forum for conservationists to interact within the community along with the Q&A module that can act as a companion app during museum visits. </p>
                     <a href="#" class="button white">Watch video</a>
                 </div>
-                <!--div class="hidden-xs hidden-sm col-md-5 text-right">
-                    <div class="screen-box screen-slider">
-                        <div class="item">
-                            <img src="images/screen-1.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-2.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-3.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-4.jpg" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/screen-5.jpg" alt="">
-                        </div>
-                    </div>
-                </div-->
+                
             </div>
         </div>
     </header>
-    <!--Header-area/-->
-
-
-
-
-    <!--Feature-area-->
-    <!--section class="gray-bg section-padding" id="service-page">
-        <div class="container">
-            <div class="row">
-                <div class="row-xs-12 row-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/service-icon-1.png" alt="">
-                        </div>
-                        <h4>EASY TO USE</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
-                    </div>
-                </div>
-                <div class="row-xs-12 row-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/service-icon-2.png" alt="">
-                        </div>
-                        <h4>AWESOEM DESIGN</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
-                    </div>
-                </div>
-                <div class="row-xs-12 row-sm-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/service-icon-3.png" alt="">
-                        </div>
-                        <h4>EASY TO CUSTOMAIZE</h4>
-                        <p>Lorem ipsum dolor sit amt, consectet adop adipisicing elit, sed do eiusmod tepo raraincididunt ugt labore.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--Feature-area/-->
-
+    
     <section class="gray-bg section-padding" id="service-page">
     
         <div class="container">
@@ -489,11 +522,7 @@ align-content: left;
                                             <img src="images/people_annotated.jpg" alt="">
                                         </div>
                                     </div>
-                                    <!--div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="images/girl.jpg" alt="">
-                                        </div>
-                                    </div-->
+                                    
                                 </div>
                             </div>
                             
@@ -508,12 +537,7 @@ align-content: left;
                             <li data-target="#caption_slide" data-slide-to="1">
                                 <strong>People in each room </strong>See the places that are getting more visitors and uncover places that are not. 
                             </li>
-                            <!--li data-target="#caption_slide" data-slide-to="2">
-                                <strong>Data Visualization </strong>consectetur adipisicing elit.
-                            </li>
-                            <li data-target="#caption_slide" data-slide-to="3">
-                                <strong>CCTV</strong>consectetur adipisicing elit.
-                            </li-->
+                            
                         </ol>
                     </div>
                 </div>
@@ -551,11 +575,7 @@ align-content: left;
                                             <img src="images/rsz_books.jpg" alt="">
                                         </div>
                                     </div>
-                                    <!--div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="images/pepfor.jpg" alt="">
-                                        </div>
-                                    </div-->
+                                    
                                 </div>
                             </div>
                             <div class="item row">
@@ -576,11 +596,7 @@ align-content: left;
                                             <img src="images/forumq.jpg" alt="">
                                         </div>
                                     </div>
-                                    <!--div class="col-xs-6 col-md-3">
-                                        <div class="caption-photo two" data-animation="animated fadeInRight">
-                                            <img src="images/ques.jpg" alt="">
-                                        </div>
-                                    </div-->
+                                    
                                 </div>
                             </div>
                             
@@ -590,20 +606,13 @@ align-content: left;
                         <ol class="carousel-indicators caption-indector">
                         
                             <li data-target="#caption_slide1" data-slide-to="0" class="active">
-                                <strong>Forum </strong>
-				    A common place for all the conservationists. 
+                                <strong>Forum </strong>A common place for all the conservationists. 
                             </li>
                             <li data-target="#caption_slide1" data-slide-to="1">
 
-                                <strong>Q & A Generating/Answering system</strong>
-				    Immersive experience for visitors through the companion app. 
+                                <strong> Q & A Generating/Answering system</strong>Immersive experience for visitors through the companion app. 
                             </li>
-                            <!--li data-target="#caption_slide" data-slide-to="2">
-                                <strong>Data Visualization </strong>consectetur adipisicing elit.
-                            </li>
-                            <li data-target="#caption_slide" data-slide-to="3">
-                                <strong>CCTV</strong>consectetur adipisicing elit.
-                            </li-->
+                            
                         </ol>
                     </div>
                 </div>
@@ -612,144 +621,7 @@ align-content: left;
         </div>
         
     </section>
-    <!--section class="gray-bg section-padding" id="feature-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>SPECIAL FEATURES</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-1.png" alt="">
-                        </div>
-                        <h3>Creative Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-2.png" alt="">
-                        </div>
-                        <h3>Unlimited Features</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-3.png" alt="">
-                        </div>
-                        <h3>Full Free Chat</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-4.png" alt="">
-                        </div>
-                        <h3>Retina ready</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-5.png" alt="">
-                        </div>
-                        <h3>High Resolution</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="box">
-                        <div class="box-icon">
-                            <img src="images/portfolio-icon-6.png" alt="">
-                        </div>
-                        <h3>Clean Codes</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quas nulla est adipisci,</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!--section class="price-area overlay section-padding" id="price-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Afortable Price</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-table">
-                        <h3 class="text-uppercase price-title">Basic</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li><strong class="amount">$ <span class="big">20</span></strong>/Month</li>
-                            <li>100 MB Disk Space</li>
-                            <li>2 Subdomains</li>
-                            <li>5 Email Accounts</li>
-                            <li>Webmail Support</li>
-                            <li>Customer Support 24/7</li>
-                        </ul>
-                        <hr>
-                        <a href="#" class="button">Purchase</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-table active">
-                        <span class="price-info"><span class="ti-crown"></span></span>
-                        <h3 class="text-uppercase price-title">STABDARD</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li><strong class="amount">$ <span class="big">39</span></strong>/Month</li>
-                            <li>100 MB Disk Space</li>
-                            <li>2 Subdomains</li>
-                            <li>5 Email Accounts</li>
-                            <li>Webmail Support</li>
-                            <li>Customer Support 24/7</li>
-                        </ul>
-                        <hr>
-                        <a href="#" class="button">Purchase</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="price-table">
-                        <h3 class="text-uppercase price-title">UNLIMITED</h3>
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li><strong class="amount">$ <span class="big">59</span></strong>/Month</li>
-                            <li>100 MB Disk Space</li>
-                            <li>2 Subdomains</li>
-                            <li>5 Email Accounts</li>
-                            <li>Webmail Support</li>
-                            <li>Customer Support 24/7</li>
-                        </ul>
-                        <hr>
-                        <a href="#" class="button">Purchase</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section-->
-
-
-
+    
     <section class="section-padding gray-bg" id="team-page" >
     
         <div class="container" >
@@ -788,28 +660,25 @@ align-content: left;
                     </div>
                 </div>
                 <script>
-// Get the modal
+
 var modal = document.getElementById('myModal');
-//var box= document.getElementById('first');
-//var box2= document.getElementById('second');
-// Get the image and insert it inside the modal - use its "alt" text as a caption
+
 var img = document.getElementById('myImg');
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
     modal.style.display = "block";
-    //box.style.width="700px";
+    
     modalImg.src = this.src;
-    //img.style.width="350px";
-    //img.style.height="350px";
+    
     captionText.innerHTML = this.alt;
 
     
-    //captionText.innerHTML = this.alt;
+    
 }
     var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
+
 span.onclick = function() { 
     modal.style.display = "none";
     
@@ -840,7 +709,7 @@ span.onclick = function() {
                     </div>
                 </div>
                 <script>
-// Get the modal
+
 var modal1 = document.getElementById('myModal1');
 var img1 = document.getElementById('myImg1');
 var modalImg1 = document.getElementById("img02");
@@ -905,69 +774,7 @@ span2.onclick = function() {
 
 
 
-    <!--section class="testimonial-area section-padding gray-bg overlay">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                    <div class="page-title">
-                        <h2>Client says</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <div class="testimonials">
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-1.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-2.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-3.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-4.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-5.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                        <div class="testimonial">
-                            <div class="testimonial-photo">
-                                <img src="images/avatar-small-6.png" alt="">
-                            </div>
-                            <h3>AR Rahman</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel vero dolore officiis, velit id libero illum harum hic magni, quae repellendus adipisci possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section-->
-
-
-
+    
 
 
 
@@ -1029,189 +836,14 @@ span2.onclick = function() {
 
 
 
-    <!--section class="section-padding overlay client-area overlay" id="client-page">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-xs-12">
-                    <div class="clients">
-                        <div class="item">
-                            <img src="images/themeforest.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/coadcanyon.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/graphicriver.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/docean.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/audiojungle.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/actividen.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/photodone.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/videgub.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/themeforest.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/coadcanyon.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/graphicriver.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/docean.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/audiojungle.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/actividen.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/photodone.gif" alt="">
-                        </div>
-                        <div class="item">
-                            <img src="images/videgub.gif" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section-padding gray-bg" id="blog-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-blog">
-                        <div class="blog-photo">
-                            <img src="images/small1.jpg" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
-                            <ul class="blog-meta">
-                                <li><span class="ti-user"></span> <a href="#">Admin</a></li>
-                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-blog">
-                        <div class="blog-photo">
-                            <img src="images/small2.jpg" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
-                            <ul class="blog-meta">
-                                <li><span class="ti-user"></span> <a href="#">Admin</a></li>
-                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="single-blog">
-                        <div class="blog-photo">
-                            <img src="images/small3.jpg" alt="">
-                        </div>
-                        <div class="blog-content">
-                            <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
-                            <ul class="blog-meta">
-                                <li><span class="ti-user"></span> <a href="#">Admin</a></li>
-                                <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section-->
-
-
-
-
-
+    
     <footer class="footer-area relative sky-bg" id="contact-page">
         <div class="absolute footer-bg"></div>
         <div class="footer-top">
             <div class="container">
-                <!--div class="row">
-                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
-                        <div class="page-title">
-                            <h2>Contact with us</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        <address class="side-icon-boxes">
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/location-arrow.png" alt="">
-                                </div>
-                                <p><strong>Address: </strong> Box 564, Disneyland <br />USA</p>
-                            </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/phone-arrow.png" alt="">
-                                </div>
-                                <p><strong>Telephone: </strong>
-                                    <a href="callto:8801812726495">+8801812726495</a> <br />
-                                    <a href="callto:8801687420471">+8801687420471</a>
-                                </p>
-                            </div>
-                            <div class="side-icon-box">
-                                <div class="side-icon">
-                                    <img src="images/mail-arrow.png" alt="">
-                                </div>
-                                <p><strong>E-mail: </strong>
-                                    <a href="mailto:youremail@example.com">youremail@example.com</a> <br />
-                                    <a href="mailto:youremail@example.com">example@mail.com</a>
-                                </p>
-                            </div>
-                        </address>
-                    </div-->
+                
                     <div class="col-xs-12 col-md-8">
-                        <!--form action="process.php" id="contact-form" method="post" class="contact-form">
-                            <div class="form-double">
-                                <input type="text" id="form-name" name="form-name" placeholder="Your name" class="form-control" required="required">
-                                <input type="email" id="form-email" name="form-email" class="form-control" placeholder="E-mail address" required="required">
-                            </div>
-                            <input type="text" id="form-subject" name="form-subject" class="form-control" placeholder="Message topic">
-                            <textarea name="message" id="form-message" name="form-message" rows="5" class="form-control" placeholder="Your message" required="required"></textarea>
-                            <button type="sibmit" class="button">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-middle">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 pull-right">
-                        <ul class="social-menu text-right x-left">
-                            <li><a href="#"><i class="ti-facebook"></i></a></li>
-                            <li><a href="#"><i class="ti-twitter"></i></a></li>
-                            <li><a href="#"><i class="ti-google"></i></a></li>
-                            <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                            <li><a href="#"><i class="ti-github"></i></a></li>
-                        </ul>
-                    </div-->
+                        
 
                     <div class="col-xs-12 col-sm-6">
                         <h1>Team Iris</h1>
@@ -1223,7 +855,7 @@ span2.onclick = function() {
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
-                        <!--p>&copy;Copyright 2018 All right resurved.  This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></p-->
+                        
                     </div>
                 </div>
             </div>
