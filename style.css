@@ -514,7 +514,8 @@ input:-webkit-autofill:focus {
 
 .caption-slider .caption-button {
     -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s
+    animation-delay: 0.8s;
+    padding-bottom: 10px;
 }
 
 .caption-slider .caption-photo.one {
