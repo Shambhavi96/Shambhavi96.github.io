@@ -170,7 +170,9 @@ path.area {
   opacity: 1;
   right: 0;
 }
-
+form{
+  padding-bottom: 20px;
+}
 </style>
 <body>
 <div class="row">
@@ -186,12 +188,13 @@ path.area {
     <span class="load">load</span>
    </p>
   </header>
+      <form method="POST" action="/upload" enctype="multipart/form-data" onsubmit="return checkForm(this);">
   <div class="body" id="drop">
    <i class="fa fa-file-text-o pointer-none" aria-hidden="true"></i>
    <p class="pointer-none"><b>Drag and drop</b> files here <br /> or <a href="" id="triggerFile">browse</a> to begin the upload</p>
       <input type="file" multiple="multiple" />
       </div>
-      <center><form method="POST" action="..." onsubmit="return checkForm(this);">
+      <center>
 
 <table>
 <tr>
@@ -354,7 +357,7 @@ if(form.room.value == '')
 
 <!--a href="vis_line 2.html" class="btn btn-primary">Visualise</a-->
 <div class="w3-display-middle">
-<button class="button" style="vertical-align:middle;"><a href="vis_line 2.html"><span>Visualise </span></a></button>
+<button class="button" style="vertical-align:middle;"><a href="/visualise-file"><span>Visualise </span></a></button>
 
 </div>
 </div>
