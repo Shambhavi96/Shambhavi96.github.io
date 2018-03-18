@@ -101,12 +101,12 @@
         });
     };
     // Call the functions 
-    magnifPopup();
+    // magnifPopup();
 
-    //Background Parallax
-    $('.header-area').parallax("50%", -0.4);
-    $('.price-area').parallax("50%", -0.5);
-    $('.testimonial-area').parallax("10%", -0.2);
+    // //Background Parallax
+    // $('.header-area').parallax("50%", -0.4);
+    // $('.price-area').parallax("50%", -0.5);
+    // $('.testimonial-area').parallax("10%", -0.2);
 
 
     $('#accordion .panel-title a').prepend('<span></span>');
